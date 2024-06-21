@@ -4,18 +4,18 @@ class Queue:
 
     def __init__(self, capacity: int):
         self.__capacity = capacity
-        
+
     def is_empty(self) -> bool:
         if self.__size == 0:
             return True
         return False
-    
+
     def is_full(self) -> bool:
         if self.__size == self.__capacity:
             return True
         return False
 
-    def dequeue(self): 
+    def dequeue(self):
         """Remove the first element from the top of 
         the queue
 
@@ -37,7 +37,7 @@ class Queue:
         """
         self.__queue.append(value)
         self.__size += 1
-    
+
     def front(self) -> int:
         """Getting the first element without removing it
 
@@ -45,7 +45,8 @@ class Queue:
             int: the top element
         """
         return self.__queue[0]
-    
+
+
 def main():
     queue = Queue(capacity=5)
     queue.enqueue(1)
@@ -56,6 +57,7 @@ def main():
     print(f'Front: {queue.front()}')
     print(f'Dequeue: {queue.dequeue()}')
     print(f'Empty: {queue.is_empty()}')
+
 
 if __name__ == '__main__':
     main()
