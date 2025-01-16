@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "khenm",
+        "projectKey": "khenm_AIO_exercises"
+    }
+}
